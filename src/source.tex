@@ -1,0 +1,79 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{fontspec}
+
+%\fontspec{Montserrat}
+
+%\usepackage[english]{babel}
+
+\usetheme{Nord}
+
+\setmainfont{Montserrat}
+
+\title{Beamer Theme Nord}
+\subtitle{A simple beamer theme that uses Nord color scheme}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+  \maketitle
+\end{frame}
+
+
+
+\subsection{Blocks}
+
+\begin{frame}
+  \frametitle{Blocks}
+  \begin{block}{This is a Block}
+    \[
+      a^2 + b^2 = c^2
+    \]
+  \end{block}
+  \begin{exampleblock}{This is an Example Block}
+    \[
+      E = m \cdot c^{2}
+    \]
+  \end{exampleblock}
+  \begin{alertblock}{This is an Alert Block}
+    \[
+      e^{i\pi} + 1 = 0
+    \]
+  \end{alertblock}
+
+  \centering
+  \begin{minipage}{1.0\linewidth}
+    \begin{block}{Horizontally-Aligned Block}
+      \[
+        \log xy = \log x + \log y
+      \]
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\subsection{Items}
+
+\begin{frame}{Items}
+  Itemize
+  \begin{itemize}
+    \item item 1
+    \item item 2
+  \end{itemize}
+
+  \bigskip
+
+  Enumerate
+  \begin{enumerate}
+    \item item 1
+    \item item 2
+  \end{enumerate}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
